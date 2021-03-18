@@ -33,6 +33,7 @@ public class StartApp {
 		
 		f = 'Y';
 		f = 'A';
+		System.out.println(f);
 		String nomeAluno = "João 1234";
 		System.out.println(nomeAluno);
 		

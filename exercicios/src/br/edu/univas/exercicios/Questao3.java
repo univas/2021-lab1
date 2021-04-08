@@ -18,6 +18,5 @@ public class Questao3 {
 		} else {
 			System.out.println("Sênior");
 		}
-		
 	}
 }

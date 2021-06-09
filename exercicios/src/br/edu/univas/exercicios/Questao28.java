@@ -11,14 +11,32 @@ public class Questao28 {
 		
 		for (int i = 0; i < 6; i++) {
 			System.out.println("Por favor, digite o número sorteado:");
-			numerosSorteados[i] = leitura.nextInt();
+			int numeroSorteado = leitura.nextInt();
+			
+			while (numeroSorteado < 1 || numeroSorteado > 60) {
+				System.out.println("O número digitado não está correto.");
+				System.out.println("Por favor, difite um número válido: "
+						+ "entre 1 (inclusive) e 60 (inclusive)");
+				numeroSorteado = leitura.nextInt();
+			}
+			
+			numerosSorteados[i] = numeroSorteado;
 		}
 		
 		int[] numerosApostados = new int[6];
 		
 		for (int i = 0; i < 6; i++) {
 			System.out.println("Por favor, digite o número apostado:");
-			numerosApostados[i] = leitura.nextInt();
+			int numeroSorteado = leitura.nextInt();
+			
+			while (numeroSorteado < 1 || numeroSorteado > 60) {
+				System.out.println("O número digitado não está correto.");
+				System.out.println("Por favor, difite um número válido: "
+						+ "entre 1 (inclusive) e 60 (inclusive)");
+				numeroSorteado = leitura.nextInt();
+			}
+			
+			numerosApostados[i] = numeroSorteado;
 		}
 		
 		int quantidadeNumerosAcertados = 0;

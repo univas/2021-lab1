@@ -11,7 +11,7 @@ public class Questao32 {
 		int menor = 0;
 		int maior = 0;
 		
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 30; i++) {
 			System.out.println("Por favor, digite sua nota:");
 			int nota = leitura.nextInt();
 			notas[i] = nota;
@@ -25,11 +25,11 @@ public class Questao32 {
 				maior = nota;
 			}
 		}
-		
+
 		int soma = 0;
 		int contador = 0;
 		
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 30; i++) {
 			if (notas[i] != menor && notas[i] != maior) {				
 				soma += notas[i];
 				contador++;
